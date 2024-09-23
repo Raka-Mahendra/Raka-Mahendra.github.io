@@ -1,0 +1,164 @@
+:root {
+  --primary-color: #8a2be2;
+  --secondary-color: #4b0082;
+  --text-color: #e0e0e0;
+  --background-color: #1a1a1a;
+  --hover-color: #9932cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'VT323', monospace; /* Ganti font ke VT323 */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+      line-height: 1.6;
+      height: 600px;
+      padding-top: 80px; /* Added to account for fixed header */
+}
+
+h1 {
+    text-align: center;
+    color: #bb86fc;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    color: #bb86fc;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.skill-card {
+    background-color: black;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 0 8px rgba(187, 134, 252, 0.5), 0 0 15px rgba(187, 134, 252, 0.3); /* Pertipis efek cahaya */
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.skill-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #bb86fc;
+}
+
+.progress-percent {
+    color: #bb86fc;
+}
+
+a {
+    text-decoration: none; /* Menghapus garis bawah pada link */
+}
+
+a:hover {
+    text-decoration: none; /* Tetap menghilangkan garis bawah saat hover */
+}
+
+.about-me {
+    background-color: black; /* Warna latar belakang kotak */
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px auto; /* Margin atas dan bawah */
+    max-width: 600px; /* Lebar maksimal */
+    color: #fff; /* Warna teks */
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.5); /* Bayangan untuk efek */
+}
+
+.about-me h2 {
+    text-align: center;
+    color: #bb86fc;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 1em; /* Ukuran font untuk deskripsi */
+    line-height: 1.4; /* Jarak antar baris */
+}
+
+header {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Limit the width of the menu */
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: inline-block;
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: white;
+      background-color: #4b0082;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+    }
+    
+        .about-me {
+            max-width: 85%; /* Lebar maksimal untuk layar kecil */
+            padding: 15px; /* Padding lebih kecil */
+        }
+
+        .about-me p {
+            font-size: 1.1em; /* Mengurangi ukuran font di layar kecil */
+        }
+
+    }

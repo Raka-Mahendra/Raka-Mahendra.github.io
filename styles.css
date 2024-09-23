@@ -1,0 +1,237 @@
+:root {
+  --primary-color: #8a2be2;
+  --secondary-color: #4b0082;
+  --text-color: #e0e0e0;
+  --background-color: #1a1a1a;
+  --hover-color: #9932cc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-image: url("https://i0.wp.com/i.pinimg.com/originals/9c/aa/3a/9caa3a6900dc2247402b63a9a0ec47d9.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  height: 600px;
+  padding-top: 80px; /* Added to account for fixed header */
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.vt323-regular {
+font-family: "VT323", monospace;
+font-weight: 400;
+font-style: normal;
+}
+
+
+header {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Limit the width of the menu */
+}
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: inline-block;
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: white;
+      background-color: #4b0082;
+}
+
+#showcase {
+  height: 550px; /* Adjusted for fixed header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#showcase h1 {
+  font-family: "VT323";
+  font-size: 50px;
+  margin-bottom: 20px;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+}
+
+#showcase p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: var(--hover-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#about, #skills, #contact {
+  padding: 80px 0;
+}
+
+a {
+  font-family: "VT323";
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  font-size: 36px;
+  font-family: "VT323";
+}
+
+p {
+  -webkit-text-fill-color: white;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  margin: 15px;
+  padding: 20px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-link:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.skill-item {
+  position: relative;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px; /* Atur lebar sesuai kebutuhan */
+  border-radius: 10px
+}
+
+.skill-icon {
+  font-size: 48px;
+  color: var(--primary-color);
+}
+
+.skill-name {
+  margin-top: 10px;
+  color: var(--text-color);
+}
